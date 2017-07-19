@@ -11,6 +11,30 @@ typedef struct head{
     struct node* next;
 } HEAD;
 
+char* s = "asdkfeaba";
+s[8] = s[6]
+s[9] = s[5]
+s[10] = s[4]
+
+int count = 2;
+int max = 0;
+int index = 0;
+int i = 0;
+for(i = 0;i < s.length;i++){
+    if(i > 1){
+        if(s[i] == s[i-count]){
+            index = i - count;
+            count += 2;
+        }
+        else{
+            if((count - 1)) > max) max = count - 1;
+            count = 2;
+        }
+    }
+}
+
+
+
 HEAD* init();
 Node* append(HEAD* head,char data);
 int set(HEAD* head,char* s);
